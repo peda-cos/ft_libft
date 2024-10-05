@@ -6,7 +6,7 @@
 #    By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:27:12 by peda-cos          #+#    #+#              #
-#    Updated: 2024/10/05 16:06:28 by peda-cos         ###   ########.fr        #
+#    Updated: 2024/10/05 20:42:57 by peda-cos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,10 +29,10 @@ $(NAME): $(OBJS)
 	ar rcs $(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
 clean:
-        rm -f $(OBJS)
+	rm -f $(OBJS)
 
 fclean: clean
-        rm -f $(NAME)
+	rm -f $(NAME)
 
 re:	fclean all
 
