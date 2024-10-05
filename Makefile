@@ -6,7 +6,7 @@
 #    By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:27:12 by peda-cos          #+#    #+#              #
-#    Updated: 2024/10/05 20:42:57 by peda-cos         ###   ########.fr        #
+#    Updated: 2024/10/05 20:43:32 by peda-cos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,6 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re:	fclean all
+re: fclean all
 
 .PHONY: all clean fclean re
