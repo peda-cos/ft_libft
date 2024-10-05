@@ -6,7 +6,7 @@
 /*   By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 06:16:59 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/04 06:21:43 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/05 19:33:28 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	if (dst == NULL && src == NULL)
+	if (!dst && !src)
 		return (NULL);
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
