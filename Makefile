@@ -6,7 +6,7 @@
 #    By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:27:12 by peda-cos          #+#    #+#              #
-#    Updated: 2024/10/05 09:46:04 by peda-cos         ###   ########.fr        #
+#    Updated: 2024/10/05 12:26:16 by peda-cos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,11 +20,13 @@ ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 OBJS = $(SRCS:.c=.o)
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-        ar rcs $(NAME) $(OBJS)
+	ar rcs $(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
 clean:
         rm -f $(OBJS)
