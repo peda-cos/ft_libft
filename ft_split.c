@@ -6,7 +6,7 @@
 /*   By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 12:38:32 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/05 23:50:17 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/05 23:53:56 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,16 +49,18 @@ static char	*allocate_word(const char *s, char c)
 	return (word);
 }
 
-char	**ft_split(char const *s, char c)
+static int	free_split(char **split, int i)
 {
-	char	**split;
-	int		words;
-	int		i;
+	while (i > 0)
+		free(split[--i]);
+	free(split);
+	return (0);
+}
 
-	words = count_words(s, c);
-	split = (char **)malloc(sizeof(char *) * (words + 1));
-	if (!split)
-		return (NULL);
+static int	fill_split(char **split, const char *s, char c)
+{
+	int	i;
+
 	i = 0;
 	while (*s)
 	{
@@ -66,12 +68,7 @@ char	**ft_split(char const *s, char c)
 		{
 			split[i] = allocate_word(s, c);
 			if (!split[i])
-			{
-				while (i > 0)
-					free(split[--i]);
-				free(split);
-				return (NULL);
-			}
+				return (free_split(split, i));
 			i++;
 			while (*s && *s != c)
 				s++;
@@ -80,5 +77,19 @@ char	**ft_split(char const *s, char c)
 			s++;
 	}
 	split[i] = NULL;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	int		words;
+	char	**split;
+
+	words = count_words(s, c);
+	split = (char **)malloc(sizeof(char *) * (words + 1));
+	if (!split)
+		return (NULL);
+	if (!fill_split(split, s, c))
+		return (NULL);
 	return (split);
 }
