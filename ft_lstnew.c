@@ -6,7 +6,7 @@
 /*   By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:01:28 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/06 19:53:40 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/06 20:01:07 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ t_list	*ft_lstnew(void *content)
 
 	new_node = malloc(sizeof(t_list));
 	new_node->content = content;
-	new_node->content = NULL;
+	new_node->next = NULL;
 	return (content);
 }
