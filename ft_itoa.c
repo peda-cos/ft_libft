@@ -6,18 +6,17 @@
 /*   By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 12:38:38 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/05 21:44:55 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/05 22:47:13 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_itoa(int n)
+int	ft_numlen(int n)
 {
 	long	num;
 	int		len;
-	char	*str;
 
 	num = n;
 	len = 0;
@@ -28,6 +27,16 @@ char	*ft_itoa(int n)
 		num /= 10;
 		len++;
 	}
+	return (len);
+}
+
+char	*ft_itoa(int n)
+{
+	long	num;
+	int		len;
+	char	*str;
+
+	len = ft_numlen(n);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
