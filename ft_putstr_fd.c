@@ -6,14 +6,22 @@
 /*   By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 12:29:03 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/05 12:31:08 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/06 08:55:14 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	size_t	i;
+
+	if (!s)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
 }
