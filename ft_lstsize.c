@@ -6,7 +6,7 @@
 /*   By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 03:49:09 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 03:54:17 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/07 14:04:57 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@ int ft_lstsize(t_list *lst)
 {
 	int	len;
 
-	len = ft_strlen(*lst);
+	len = 0;
+	while (lst)
+	{
+		len++;
+		lst = lst->next; 
+	}
 	return (len);
 }
