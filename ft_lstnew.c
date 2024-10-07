@@ -6,7 +6,7 @@
 /*   By: peda-cos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:01:28 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/06 20:16:37 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/07 14:02:20 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,34 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
+/*
+#include <stdio.h>
+void	print(t_list *head)
+{
+	t_list	*temp;
+
+	temp = head;
+	while (temp != NULL)
+	{
+		printf("%i ", *(int *)(temp->content));
+		temp = temp->next;
+	}
+	printf("NULL\n");
+}
+
+int	main(void)
+{
+	int		x;
+	int		y;
+	int		z;
+	t_list	*head;
+
+	x = 10;
+	y = 20;
+	z = 30;
+	head = ft_lstnew(&x);
+	head->next = ft_lstnew(&y);
+	head->next->next = ft_lstnew(&z);
+	print(head);
+	return (0);
+}*/
