@@ -6,11 +6,11 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 07:37:36 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 16:00:06 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 07:02:22 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

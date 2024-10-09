@@ -6,11 +6,11 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 10:34:42 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 16:00:25 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 07:01:54 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

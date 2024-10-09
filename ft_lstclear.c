@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 07:22:00 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/09 06:50:17 by peda-cos         ###   ########.fr       */
+/*   Created: 2024/10/09 05:27:24 by peda-cos          #+#    #+#             */
+/*   Updated: 2024/10/09 05:28:48 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	i;
+	t_list	*current;
+	t_list	*next_node;
 
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	if (size <= dst_len)
-		return (size + src_len);
-	i = 0;
-	while (src[i] && (dst_len + i) < (size - 1))
+	if (!lst || !del)
+		return ;
+	current = *lst;
+	while (current)
 	{
-		dst[dst_len + i] = src[i];
-		i++;
+		next_node = current->next;
+		ft_lstdelone(current, del);
+		current = next_node;
 	}
-	dst[dst_len + i] = '\0';
-	return (dst_len + src_len);
+	*lst = NULL;
 }

@@ -6,11 +6,9 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 06:03:09 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 15:54:50 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 05:52:19 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {

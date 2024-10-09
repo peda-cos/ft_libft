@@ -6,11 +6,11 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 05:45:45 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 15:59:50 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 06:48:38 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 size_t	ft_strlen(const char *s)
 {

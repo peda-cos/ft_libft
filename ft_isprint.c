@@ -6,11 +6,9 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 06:08:44 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 15:55:28 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 05:53:56 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

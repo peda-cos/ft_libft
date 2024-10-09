@@ -6,11 +6,11 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 10:34:06 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 15:56:53 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 07:03:03 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

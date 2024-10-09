@@ -6,16 +6,16 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 10:34:48 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 15:58:55 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 06:59:08 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 char	*ft_strchr(const char *s, int c)
 {
 	char	ch;
-	size_t	i;
+	int	i;
 
 	ch = (char)c;
 	i = 0;

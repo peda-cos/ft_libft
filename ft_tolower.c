@@ -6,11 +6,9 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 07:09:57 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 16:00:57 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/09 06:50:43 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {
