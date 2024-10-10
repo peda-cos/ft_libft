@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 10:34:48 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/09 06:59:08 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/10 06:21:25 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strchr(const char *s, int c)
 {
 	char	ch;
-	int	i;
+	int		i;
 
 	ch = (char)c;
 	i = 0;
