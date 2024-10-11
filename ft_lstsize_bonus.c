@@ -6,13 +6,13 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 03:49:09 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/10 05:30:57 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:51:50 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	len;
 
@@ -20,7 +20,7 @@ int ft_lstsize(t_list *lst)
 	while (lst)
 	{
 		len++;
-		lst = lst->next; 
+		lst = lst->next;
 	}
 	return (len);
 }

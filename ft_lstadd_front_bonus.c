@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 20:18:23 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/07 15:56:00 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:41:51 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-
-#include <stdio.h>
-
