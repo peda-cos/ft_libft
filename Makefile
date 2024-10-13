@@ -6,7 +6,7 @@
 #    By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:27:12 by peda-cos          #+#    #+#              #
-#    Updated: 2024/10/11 18:37:02 by peda-cos         ###   ########.fr        #
+#    Updated: 2024/10/13 17:52:33 by peda-cos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,6 @@ BONUS_SRCS = \
 
 MANDATORY_OBJS = $(MANDATORY_SRCS:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
-ALL_OBJS = $(MANDATORY_OBJS) $(BONUS_OBJS)
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
