@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 12:38:38 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/15 00:22:39 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/15 00:25:06 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_itoa(int n)
 	char	*str;
 
 	len = ft_numlen(n);
-	str = (char *)ft_calloc(sizeof(char) , (len + 1));
+	str = (char *)ft_calloc(sizeof(char), (len + 1));
 	if (!str)
 		return (NULL);
 	str[len] = '\0';
