@@ -6,13 +6,13 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 12:38:38 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/15 00:25:06 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/15 09:21:05 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_numlen(int n)
+int	ft_numlen(int n)
 {
 	long	num;
 	int		len;
