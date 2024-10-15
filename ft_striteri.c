@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 12:38:45 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/15 10:01:41 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/15 10:03:52 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	if (!s || !f)
-		return (0);
+		return ;
 	i = 0;
 	while (s[i])
 	{
