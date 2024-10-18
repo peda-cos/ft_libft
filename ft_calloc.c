@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 10:36:18 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/10/10 06:21:06 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/10/18 12:19:56 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t	total_size;
 	void	*ptr;
 
-	if (nmemb == 0 || size == 0)
-		return (malloc(0));
-	if (nmemb > (size_t)-1 / size)
+	if (!nmemb || !size)
 		return (NULL);
 	total_size = nmemb * size;
+	if (size != size / nmemb)
+		return (NULL);
 	ptr = malloc(total_size);
 	if (!ptr)
 		return (NULL);
