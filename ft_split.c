@@ -14,8 +14,8 @@
 
 static int	count_words(const char *s, char c)
 {
-	int	count;
-	int	in_word;
+	int		count;
+	int		in_word;
 
 	count = 0;
 	in_word = 0;
@@ -84,6 +84,8 @@ char	**ft_split(char const *s, char c)
 	int		words;
 	char	**split;
 
+	if (!s)
+		return (NULL);
 	words = count_words(s, c);
 	split = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!split)
