@@ -1,5 +1,3 @@
-# ft_libft
-
 ## Description
 `ft_libft` is a custom library for C programming that implements essential standard functions. The project aims to help you understand how these functions work by creating your own library. This library will be beneficial for your upcoming C school assignments, streamlining your coding process and enhancing your understanding of C.
 
