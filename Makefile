@@ -36,8 +36,8 @@ all: $(NAME)
 $(NAME): $(MANDATORY_OBJS)
 	ar rcs $@ $^
 
-bonus: $(MANDATORY_OBJS) $(BONUS_OBJS)
-	ar rcs $(NAME) $(MANDATORY_OBJS) $(BONUS_OBJS)
+bonus: $(BONUS_OBJS)
+	ar rcs $(NAME) $(BONUS_OBJS)
 
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
