@@ -34,13 +34,13 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(MANDATORY_OBJS)
-	ar rcs $@ $^
 
 bonus: $(BONUS_OBJS)
 	ar rcs $(NAME) $^
 
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
+	ar rcs $(NAME) $@
 
 clean:
 	rm -f $(MANDATORY_OBJS) $(BONUS_OBJS)
