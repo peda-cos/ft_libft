@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 10:33:46 by peda-cos          #+#    #+#             */
-/*   Updated: 2025/01/31 06:48:26 by peda-cos         ###   ########.fr       */
+/*   Updated: 2025/01/31 07:42:02 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_atoi(const char *nptr)
 {
-	return ((int)ft_strtol(nptr, (char **)NULL, 10));
+	return ((int)ft_strtol(nptr, (char **) NULL, 10));
 }

@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 07:30:27 by peda-cos          #+#    #+#             */
-/*   Updated: 2025/01/31 07:32:09 by peda-cos         ###   ########.fr       */
+/*   Updated: 2025/01/31 07:42:33 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 long	ft_atol(const char *nptr)
 {
-	return (ft_strtol(nptr, (char **)NULL, 10));
+	return (ft_strtol(nptr, (char **) NULL, 10));
 }
