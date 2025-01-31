@@ -1,5 +1,5 @@
 ## Description
-`ft_libft` is a custom library for C programming that implements essential standard functions. The project aims to help you understand how these functions work by creating your own library. This library will be beneficial for your upcoming C school assignments, streamlining your coding process and enhancing your understanding of C.
+`ft_libft` is a custom library for C programming that implements essential standard functions. The project aims to help you understand how these functions work by creating your own library.
 
 #### Norminette
 ![norminette](https://github.com/peda-cos/get_next_line/actions/workflows/main.yml/badge.svg)
@@ -44,17 +44,6 @@ After installing, you can use the following commands to manage your library:
   ```bash
   make re
   ```
-
-- **Build bonus features**:
-  ```bash
-  make bonus
-  ```
-
-## Contributing
-Contributions are welcome! If you would like to contribute to this project, please submit a pull request. Your suggestions and improvements will be greatly appreciated.
-
-## License
-This project is open-source, and there is no specific license at this moment. Contributions and usage are permitted without restrictions.
 
 ## Contact Information
 For any questions or suggestions, feel free to reach out to me via my [GitHub profile](https://github.com/peda-cos).
