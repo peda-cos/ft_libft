@@ -32,7 +32,7 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $@
+	ar rcs $(NAME) $^
 
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
