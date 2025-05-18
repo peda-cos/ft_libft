@@ -10,7 +10,7 @@ SRCS =	src/ft_isalpha.c src/ft_isdigit.c src/ft_isalnum.c src/ft_isascii.c src/f
 		src/ft_split.c src/ft_itoa.c src/ft_strmapi.c src/ft_striteri.c src/ft_putchar_fd.c \
 		src/ft_putstr_fd.c src/ft_putendl_fd.c src/ft_putnbr_fd.c src/ft_strtoupper.c src/ft_strtolower.c \
 		src/ft_startswith.c src/ft_endswith.c \
-		src/get_next_line.c src/get_next_line_utils.c src/get_next_line_aux.c \
+		src/get_next_line.c src/get_next_line_utils.c \
 		src/ft_printf.c src/ft_puthex_fd.c src/ft_putptr_fd.c src/ft_putunbr_fd.c
 
 BONUS =	src/ft_lstadd_back_bonus.c src/ft_lstadd_front_bonus.c src/ft_lstclear_bonus.c \
