@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:02:17 by peda-cos          #+#    #+#             */
-/*   Updated: 2025/05/16 17:32:59 by peda-cos         ###   ########.fr       */
+/*   Updated: 2025/05/17 22:19:30 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,13 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_isspace(int c);
 int					ft_isxdigit(int c);
+void				ft_putchar_fd(char c, int fd);
+void				ft_putstr_fd(char *s, int fd);
+void				ft_putendl_fd(char *s, int fd);
+void				ft_putnbr_fd(int n, int fd);
+void				ft_puthex_fd(unsigned int n, int uppercase, int fd);
+void				ft_putptr_fd(void *ptr, int fd);
+void				ft_putunbr_fd(unsigned int n, int fd);
 size_t				ft_strlen(const char *s);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
@@ -65,10 +72,6 @@ char				**ft_split(char const *s, char c);
 char				*ft_itoa(int n);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
-void				ft_putchar_fd(char c, int fd);
-void				ft_putstr_fd(char *s, int fd);
-void				ft_putendl_fd(char *s, int fd);
-void				ft_putnbr_fd(int n, int fd);
 char				*ft_strtoupper(char *str);
 char				*ft_strtolower(char *str);
 int					ft_startswith(const char *str, const char *prefix);
@@ -106,10 +109,10 @@ char				*append_buffer(char *storage, char *buffer);
 int					ft_printf(const char *format, ...);
 int					ft_printf_putchar_fd(char c, int fd);
 int					ft_printf_putstr_fd(char *s, int fd);
+int					ft_printf_putendl_fd(char *s, int fd);
 int					ft_printf_putnbr_fd(int n, int fd);
 int					ft_printf_putunbr_fd(unsigned int n, int fd);
-int					ft_printf_puthex_fd(unsigned int n, int fd, int uppercase);
+int					ft_printf_puthex_fd(unsigned int n, int uppercase, int fd);
 int					ft_printf_putptr_fd(void *ptr, int fd);
-int					ft_printf_putunbr_fd(unsigned int n, int fd);
 
 #endif
