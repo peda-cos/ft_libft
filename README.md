@@ -142,7 +142,7 @@ A custom implementation of the printf function supporting various format specifi
 - `make bonus`: Adds bonus functions (linked list utilities) to the library
 - `make clean`: Removes object files
 - `make fclean`: Removes object files and the library
-- `make re`: Rebuilds the library from scratc
+- `make re`: Rebuilds the library from scratch
 
 ---
 
